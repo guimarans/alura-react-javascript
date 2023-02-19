@@ -1,15 +1,11 @@
 import './Time.css';
 
 const Time = (props) => {
-    return(
-        props.times.map(time => {
-            return (
-                <section className="time" key={time}> 
-                    <h3>{time}</h3> 
-                </section>
-            )
-        })
-    );
+    return (
+        <section className="time" style={{ backgroundColor: props.corSecundaria }}> 
+            <h3 style={{ borderBottomColor: props.corPrimaria }}>{props.nome}</h3> 
+        </section>
+    )
 }
 
 export default Time;
